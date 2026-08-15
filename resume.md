@@ -1,85 +1,52 @@
-# Dhrubjyoti Chattopadhyay
-
-**QA Engineer | Automation, Manual & API Testing | Azure Cloud | Agile/Scrum**
-
-[GitHub](https://github.com/dhrub-tech) | [Email](mailto:dhrubchattopadhyay.97@gmail.com) | [LinkedIn](https://www.linkedin.com/in/drvchat98) | 
+# DHRUBJYOTI CHATTOPADHYAY
+**QA Engineer | Automation, Manual & API Testing | Azure Cloud | Agile/Scrum**  
+(+91) 7873337422 | dhrubchattopadhyay.97@gmail.com | [LinkedIn](https://www.linkedin.com/in/drvchat98) | [GitHub](https://github.com/dhrub-tech) | [X](https://x.com/bud_wiserr)
 
 ---
 
-## Summary
-
-QA Engineer with 3 years of experience in Software Quality Assurance, specializing in Selenium automation using Java, TestNG, Maven, API testing, SQL, Git and Jenkins.
-
-Experienced in Functional, Regression, Sanity, API and Database Testing with hands-on experience in POM-based automation frameworks and Agile/Scrum environments.
+### **SUMMARY**
+QA Engineer with 3+ years of SQA experience specializing in Selenium Automation (Java, TestNG, Maven), API Testing, SQL, Git, and Jenkins. Experienced in developing POM-based automation frameworks, executing Functional, Regression, Sanity, API, and Database Testing in Agile/Scrum environments. Certified Azure Administrator (AZ-104) with hands-on knowledge of Azure administration and CI/CD practices.
 
 ---
 
-## Experience
+### **EXPERIENCE**
 
-### Operations Associate | eTeam Infoservices Pvt. Ltd.
+**Operations Associate** | eTeam Infoservices Pvt. Ltd. | *2024 – Present | India*  
+* **Uber Eats & Postmates (Client: Uber)** | *Java, Selenium, TestNG, Maven, Jenkins, Postman, Jira, GitHub*
+  * **Automation & CI/CD:** Maintained POM Java-Selenium scripts; updated UI locators from SRS docs and executed automated regression suites via TestNG and Jenkins CI.
+  * **API & Backend Validation:** Executed manual REST API tests in Postman, validating HTTP status codes, payloads, and response structures.
+  * **Defect Tracking:** Logged, documented, and retested bugs in Jira with full logs and reproduction steps during sprint cycles.
+* **LOADHIVE (Client: Nitro Logistics Inc.)** | *Java, Selenium, Maven, MySQL, Jira*
+  * **QA & Backend Verification:** Created manual/automated test scenarios for shipment workflows; executed SQL queries in MySQL for backend data validation.
 
-**2024 – Present | India**
-
-**Uber Eats & Postmates | Client: Uber**
-**Tools:** Java, Selenium WebDriver, TestNG, Maven, Jenkins, Postman, Jira, GitHub
-
-* Maintained Java-Selenium automation scripts using POM and executed TestNG regression suites through Jenkins CI pipelines.
-* Performed API validation using Postman and managed defect lifecycle through Jira across sprint releases.
-
-**LOADHIVE | Client: Nitro Logistics Inc.**
-**Tools:** Java, Selenium WebDriver, Maven, MySQL, Jira
-
-* Created manual test scenarios and supported Selenium automation for shipment workflows to improve regression coverage.
-* Performed SQL-based backend validation in MySQL and tracked end-to-end defects through Jira.
-
-### Manual Test Engineer | Contractual
-
-**2022 – 2023 | India**
-
-**Road Construction & Management Portal | Client: Civil Engineering Department**
-**Tools:** Jira, TestRail, MySQL, Excel
-
-* Executed functional and regression test cases while validating backend data using SQL.
-* Conducted KT sessions covering test strategy and core application workflows.
+**Manual Test Engineer (Contractual)** | *2022 – 2023 | India*  
+* **Road Construction Portal (Client: Civil Engineering Dept.)** | *Jira, TestRail, MySQL, Excel*
+  * Executed functional and regression test suites, validated backend SQL data, and led KT sessions on core application workflows.
 
 ---
 
-## Personal Projects
-
-### FastLogistics Shipment Management
-
-Built a data-driven Selenium automation framework using Java, TestNG and POM to automate authentication, shipment creation, tracking and dashboard workflows.
-
-### SauceDemo Automation
-
-Built a Selenium WebDriver and TestNG framework using POM to automate end-to-end e-commerce workflows with GitHub version control.
-
-### Azure VNet Peering & Custom RBAC
-
-Designed Azure VNet peering architecture and implemented a custom RBAC role for controlled VM operations.
+### **KEY ACHIEVEMENTS**
+* **Automation & Performance:** Enhanced and executed 40+ Selenium automation scripts using Java, TestNG, Maven, and POM, improving stability and run times.
+* **Defect Management:** Logged and verified 180+ defects in Jira across 100+ regression/functional test cycles across multiple releases.
+* **API Validation:** Tested API payloads, status codes, and JSON responses using Postman.
 
 ---
 
-## Skills
-
-**Automation Testing:** Java, Selenium WebDriver, TestNG, Maven, Page Object Model (POM)
-
-**API Testing:** REST API Validation, Postman
-
-**Manual Testing:** Functional, Regression, Smoke, Sanity, SIT, UAT, BVA, ECP
-
-**Databases:** MySQL, SQL 
-
-**Tools & Platforms:** Jira, GitHub, Eclipse, TestRail, Chrome DevTools
-
-**CI/CD & Cloud:** Jenkins, GitHub Actions, Microsoft Azure, AZ-104
-
-**Methodologies:** Agile/Scrum, STLC, SDLC, Bug Lifecycle Management
+### **PERSONAL PROJECTS** | [GitHub Portfolio](https://github.com/dhrub-tech)
+* **FastLogistics Shipment Management:** Data-driven Selenium framework (Java, TestNG, POM) automating authentication, shipment creation, tracking, and dashboard workflows.
+* **SauceDemo Automation:** End-to-end e-commerce automation framework using Selenium WebDriver, TestNG, and POM with Git version control.
+* **Azure VNet & Custom RBAC:** Implemented secure cross-network Azure VNet peering and configured custom RBAC roles for restricted VM operations.
 
 ---
 
-## Certifications
+### **SKILLS**
+* **Automation & API:** Java, Selenium WebDriver, TestNG, Maven, POM, Postman (REST API validation)
+* **Testing & DB:** Functional, Regression, Smoke, Sanity, SIT, UAT, BVA, ECP, MySQL (SQL queries)
+* **Tools & Cloud:** Jira, GitHub, Jenkins, GitHub Actions, TestRail, Eclipse, Chrome DevTools, Azure (AZ-104)
+* **Methodologies:** Agile/Scrum, STLC, SDLC, Bug Lifecycle Management
 
-**Microsoft Certified: Azure Administrator Associate (AZ-104)**
+---
 
-**Microsoft Certified: Azure Fundamentals (AZ-900)**
+### **CERTIFICATIONS**
+* **Microsoft Certified:** Azure Administrator Associate (AZ-104)
+* **Microsoft Certified:** Azure Fundamentals (AZ-900)
