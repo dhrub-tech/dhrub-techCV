@@ -2,267 +2,186 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dhrubjyoti Chattopadhyay - QA Engineer</title>
-
 <style>
-    @page {
-        size: A4;
-        margin: 0;
+    @page { 
+        size: A4 portrait; 
+        margin: 0; 
+    }
+    * { 
+        box-sizing: border-box; 
+    }
+    html, body { 
+        margin: 0; 
+        padding: 0; 
+        background: #ffffff; 
+        font-family: Arial, Helvetica, sans-serif; 
+        color: #222222; 
+        font-size: 8.5pt; 
+        line-height: 1.25; 
+        -webkit-print-color-adjust: exact; 
+        print-color-adjust: exact; 
     }
 
-    * {
-        box-sizing: border-box;
-    }
-
-    html, body {
-        margin: 0;
-        padding: 0;
-        background: #eeeeee;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #222;
-    }
-
-    /* A4 PAGE CONTAINER */
-    .page {
-        width: 210mm;
-        height: 297mm;
-        margin: 6mm auto;
-        padding: 6mm 10mm;
+    /* PERFECT A4 FULL-PAGE CONTAINER */
+    .page { 
+        width: 210mm; 
+        height: 297mm; 
+        padding: 10mm 12mm; 
+        margin: 0 auto; 
+        overflow: hidden; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between; 
         background: #ffffff;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.15);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        overflow: hidden;
     }
 
-    /* ================= HEADER ================= */
-    .header {
-        text-align: center;
-        padding-bottom: 4px;
-        border-bottom: 2px solid #173f5f;
-    }
-
-    .name {
-        margin: 0;
-        font-size: 24px;
-        line-height: 1.1;
-        font-weight: 700;
-        color: #173f5f;
-        letter-spacing: -0.2px;
-    }
-
-    .title {
-        margin-top: 3px;
-        font-size: 12px;
-        line-height: 1.2;
-        font-weight: 700;
-        color: #333;
-    }
-
-    .contact {
-        margin-top: 4px;
-        font-size: 11px;
-        line-height: 1.25;
-    }
-
-    .contact a {
-        color: #173f5f;
-        text-decoration: none;
-        font-weight: 600;
-    }
-
-    .separator {
-        color: #888;
-        margin: 0 4px;
-    }
-
-    /* ================= SECTIONS ================= */
-    .section {
-        margin-top: 2px;
-    }
-
-    .section-title {
-        margin: 0 0 2px 0;
-        padding-bottom: 1px;
-        font-size: 12px;
-        line-height: 1.1;
-        font-weight: 700;
-        color: #173f5f;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        border-bottom: 1px solid #aebdca;
-    }
-
-    /* ================= SUMMARY ================= */
-    .summary {
-        margin: 0;
-        font-size: 11px;
-        line-height: 1.3;
-        text-align: justify;
-    }
-
-    /* ================= EXPERIENCE ================= */
-    .job {
+    /* HEADER */
+    header { 
+        text-align: center; 
+        border-bottom: 2px solid #173f5f; 
+        padding-bottom: 4px; 
         margin-bottom: 2px;
     }
+    h1 { 
+        font-size: 16pt; 
+        margin: 0; 
+        color: #173f5f; 
+        line-height: 1; 
+        letter-spacing: -0.2px;
+        font-weight: 700;
+    }
+    .title { 
+        font-weight: 700; 
+        font-size: 9pt; 
+        margin: 3px 0 2px 0; 
+        color: #333333; 
+    }
+    .contact { 
+        font-size: 8.5pt; 
+        color: #444444;
+    }
+    .contact a { 
+        color: #173f5f; 
+        text-decoration: none; 
+        font-weight: 600;
+    }
+    .separator {
+        color: #888888;
+        margin: 0 3px;
+    }
 
+    /* SECTIONS */
+    .section-block {
+        margin-bottom: 2px;
+    }
+    h2 { 
+        font-size: 9.5pt; 
+        color: #173f5f; 
+        border-bottom: 1px solid #aebdca; 
+        margin: 0 0 4px 0; 
+        text-transform: uppercase; 
+        padding-bottom: 2px; 
+        line-height: 1; 
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+    p { 
+        margin: 0 0 3px 0; 
+        text-align: justify; 
+    }
+    ul { 
+        margin: 2px 0 3px 14px; 
+        padding: 0; 
+    }
+    li { 
+        margin-bottom: 2px; 
+        padding-left: 1px;
+    }
+
+    /* EXPERIENCE & JOBS */
+    .job {
+        margin-bottom: 4px;
+    }
     .job:last-child {
         margin-bottom: 0;
     }
-
-    .job-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        gap: 8px;
-        font-size: 11px;
-        line-height: 1.15;
+    .job-header { 
+        display: flex; 
+        justify-content: space-between; 
+        font-weight: 700; 
+        font-size: 8.8pt;
+        color: #222222;
     }
-
-    .job-title {
-        font-weight: 700;
-        color: #222;
-    }
-
-    .job-date {
-        font-weight: 700;
-        color: #444;
-        white-space: nowrap;
-    }
-
     .company {
-        margin-top: 1px;
-        font-size: 11px;
-        line-height: 1.1;
         font-weight: 700;
-        color: #555;
+        color: #555555;
+        margin-bottom: 2px;
+    }
+    .project-title { 
+        font-weight: 700; 
+        color: #173f5f; 
+        font-size: 8.8pt;
+        margin-top: 2px;
+    }
+    .tech { 
+        font-style: italic; 
+        color: #555555; 
+        font-size: 8pt;
+        margin-bottom: 2px;
     }
 
-    .project {
-        margin-top: 1px;
-        font-size: 11px;
-        line-height: 1.15;
-        font-weight: 700;
-        color: #173f5f;
-    }
-
-    .tech {
-        margin-top: 1px;
-        font-size: 11px;
-        line-height: 1.1;
-        color: #555;
-        font-style: italic;
-    }
-
-    ul {
-        margin: 1px 0 0 12px;
-        padding: 0;
-    }
-
-    li {
-        margin: 0 0 1px 0;
-        padding-left: 2px;
-        font-size: 11px;
-        line-height: 1.25;
-    }
-
-    /* ================= ACHIEVEMENTS ================= */
-    .achievements-list {
-        margin: 1px 0 0 12px;
-        padding: 0;
-    }
-
-    /* ================= PROJECTS ================= */
+    /* PROJECTS */
     .project-item {
-        margin-bottom: 1px;
-        font-size: 11px;
-        line-height: 1.25;
+        margin-bottom: 3px;
+        text-align: justify;
     }
 
-    .project-item:last-child {
-        margin-bottom: 0;
+    /* SKILLS */
+    .skills-grid { 
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        gap: 3px 12px; 
     }
-
-    .project-name {
-        font-weight: 700;
-        color: #173f5f;
+    .skill-item {
+        font-size: 8.5pt;
     }
-
-    /* ================= SKILLS ================= */
-    .skills {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 12px;
-        row-gap: 1px;
-    }
-
-    .skill-row {
-        font-size: 11px;
-        line-height: 1.2;
-    }
-
     .skill-label {
         font-weight: 700;
         color: #173f5f;
     }
 
-    /* ================= CERTIFICATIONS ================= */
-    .certifications {
-        margin-top: 1px;
+    /* CERTIFICATIONS */
+    .cert-container { 
+        display: flex; 
+        gap: 8px; 
+    }
+    .cert-box { 
+        flex: 1; 
+        background: #f5f7f9; 
+        border-left: 3px solid #173f5f; 
+        padding: 4px 6px; 
+        font-weight: 700; 
+        font-size: 8.5pt;
     }
 
-    .cert-list {
-        display: flex;
-        justify-content: space-between;
-        gap: 8px;
-    }
-
-    .cert {
-        flex: 1;
-        padding: 3px 6px;
-        border-left: 3px solid #173f5f;
-        background: #f5f7f9;
-        font-size: 11px;
-        line-height: 1.2;
-        font-weight: 700;
-    }
-
-    /* ================= PRINT ================= */
     @media print {
-        html, body {
-            background: #ffffff;
-        }
-
         .page {
             width: 210mm;
             height: 297mm;
             margin: 0;
-            padding: 6mm 10mm;
+            padding: 10mm 12mm;
             box-shadow: none;
             page-break-after: avoid;
             page-break-inside: avoid;
         }
-
-        .section, .job, .project-item {
-            page-break-inside: avoid;
-        }
-
-        a {
-            color: #173f5f;
-        }
     }
 </style>
 </head>
-
 <body>
-
 <div class="page">
-
-    <!-- HEADER -->
-    <header class="header">
-        <h1 class="name">DHRUBJYOTI CHATTOPADHYAY</h1>
+    <header>
+        <h1>DHRUBJYOTI CHATTOPADHYAY</h1>
         <div class="title">QA Engineer | Automation, Manual &amp; API Testing | Azure Cloud | Agile/Scrum</div>
         <div class="contact">
             (+91) 7873337422
@@ -277,26 +196,21 @@
         </div>
     </header>
 
-    <!-- SUMMARY -->
-    <section class="section">
-        <h2 class="section-title">Summary</h2>
-        <p class="summary">
-            QA Engineer with over 3 years of Software Quality Assurance experience, specializing in Selenium Automation using Java, TestNG, Maven, API Testing, SQL, Git and Jenkins. Experienced in developing and maintaining POM-based automation frameworks, executing Functional, Regression, Sanity, API, and Database Testing, and managing defects in Agile/Scrum environments. Certified Microsoft Azure Administrator (AZ-104), expanding expertise in Azure cloud administration, CI/CD, and modern DevOps practices.
-        </p>
-    </section>
+    <div class="section-block">
+        <h2>Summary</h2>
+        <p>QA Engineer with over 3 years of Software Quality Assurance experience, specializing in Selenium Automation using Java, TestNG, Maven, API Testing, SQL, Git and Jenkins. Experienced in developing and maintaining POM-based automation frameworks, executing Functional, Regression, Sanity, API, and Database Testing, and managing defects in Agile/Scrum environments. Certified Microsoft Azure Administrator (AZ-104), expanding expertise in Azure cloud administration, CI/CD, and modern DevOps practices.</p>
+    </div>
 
-    <!-- EXPERIENCE -->
-    <section class="section">
-        <h2 class="section-title">Experience</h2>
-
+    <div class="section-block">
+        <h2>Experience</h2>
         <div class="job">
             <div class="job-header">
-                <div class="job-title">Operations Associate | eTeam Infoservices Pvt. Ltd</div>
-                <div class="job-date">2024 – Present</div>
+                <span>Operations Associate | eTeam Infoservices Pvt. Ltd</span>
+                <span>2024 – Present</span>
             </div>
             <div class="company">India</div>
 
-            <div class="project">Uber Eats &amp; Postmates | Client: Uber</div>
+            <div class="project-title">Uber Eats &amp; Postmates | Client: Uber</div>
             <div class="tech">Tools: Java, Selenium WebDriver, TestNG, Maven, Jenkins, Postman, Jira, GitHub</div>
             <ul>
                 <li><strong>Automation &amp; CI/CD Execution:</strong> Maintained modular Java-Selenium automation scripts within a POM framework by analyzing SRS documentation to update UI locators and executed automated regression suites via TestNG and Jenkins CI pipelines.</li>
@@ -304,7 +218,7 @@
                 <li><strong>Defect Tracking:</strong> Identified, documented and retested for software defects in Jira with complete reproduction steps and logs, working with development teams to verify fixes during sprint cycles.</li>
             </ul>
 
-            <div class="project">LOADHIVE | Client: Nitro Logistics Inc.</div>
+            <div class="project-title">LOADHIVE | Client: Nitro Logistics Inc.</div>
             <div class="tech">Tools: Java, Selenium WebDriver, Maven, MySQL, Jira</div>
             <ul>
                 <li><strong>Test Execution &amp; Quality Assurance:</strong> Wrote and maintained manual test scenarios, assisted in Java-Selenium automated checks for shipment workflows, reducing regression efforts and keeping releases on schedule.</li>
@@ -314,90 +228,62 @@
 
         <div class="job">
             <div class="job-header">
-                <div class="job-title">Manual Test Engineer (Contractual)</div>
-                <div class="job-date">2022 – 2023</div>
+                <span>Manual Test Engineer (Contractual)</span>
+              
             </div>
             <div class="company">India</div>
 
-            <div class="project">Road Construction &amp; Management Portal | Client: Civil Engineering Department</div>
+            <div class="project-title">Road Construction &amp; Management Portal | Client: Civil Engineering Department</div>
             <div class="tech">Tools: Jira, TestRail, MySQL, Excel</div>
             <ul>
                 <li>Executed manual test cases for Functional Testing, maintained regression test suites, and validated backend data using SQL.</li>
                 <li>Conducted KT sessions to demonstrate test strategy and workflow for core functionalities.</li>
             </ul>
         </div>
-    </section>
+    </div>
 
-    <!-- KEY ACHIEVEMENTS -->
-    <section class="section">
-        <h2 class="section-title">Key Achievements</h2>
-        <ul class="achievements-list">
+    <div class="section-block">
+        <h2>Key Achievements</h2>
+        <ul>
             <li><strong>Automation Script Execution &amp; Enhancement:</strong> Enhanced, maintained, and executed 40+ Selenium automation scripts using Java, Selenium WebDriver, TestNG, Maven, and POM, improving automation stability and improving average handling time.</li>
             <li><strong>Defect &amp; Regression Management:</strong> Logged, tracked, and verified 180+ defects using Jira, while executing 100+ regression and functional test cycles across multiple sprint releases.</li>
             <li><strong>API Validation &amp; Quality Assurance:</strong> Validated API responses using Postman, verifying request/response payloads, HTTP status codes, and JSON responses.</li>
         </ul>
-    </section>
+    </div>
 
-    <!-- PERSONAL PROJECTS -->
-    <section class="section">
-        <h2 class="section-title">Personal Projects</h2>
-
+    <div class="section-block">
+        <h2>Personal Projects</h2>
         <div class="project-item">
-            <span class="project-name">FastLogistics Shipment Management:</span>
-            Built a scalable, data-driven Selenium test framework using the Page Object Model (POM) to automate end-to-end logistics workflows, including authentication, shipment creation, status tracking, and dashboard navigation.
+            <strong>FastLogistics Shipment Management:</strong> Built a scalable, data-driven Selenium test framework using the Page Object Model (POM) to automate end-to-end logistics workflows, including authentication, shipment creation, status tracking, and dashboard navigation.
         </div>
-
         <div class="project-item">
-            <span class="project-name">SauceDemo Automation:</span>
-            Built a Selenium WebDriver &amp; TestNG framework using the Page Object Model (POM) to automate end-to-end e-commerce workflows, using GitHub for version control.
+            <strong>SauceDemo Automation:</strong> Built a Selenium WebDriver &amp; TestNG framework using the Page Object Model (POM) to automate end-to-end e-commerce workflows, using GitHub for version control.
         </div>
-
         <div class="project-item">
-            <span class="project-name">Virtual Network Peering &amp; Custom RBAC Role Implementation:</span>
-            Designed an Azure VNet architecture with secure cross-network peering, and a custom RBAC role to grant access for VM operations.
+            <strong>Virtual Network Peering &amp; Custom RBAC Role Implementation:</strong> Designed an Azure VNet architecture with secure cross-network peering, and a custom RBAC role to grant access for VM operations.
         </div>
-    </section>
+    </div>
 
-    <!-- SKILLS -->
-    <section class="section">
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills">
-            <div class="skill-row">
-                <span class="skill-label">Automation Testing:</span> Java, Selenium WebDriver, TestNG, Maven, Page Object Model (POM)
-            </div>
-            <div class="skill-row">
-                <span class="skill-label">Manual Testing:</span> Functional, Regression, Smoke, Sanity, SIT, UAT, BVA, ECP
-            </div>
-            <div class="skill-row">
-                <span class="skill-label">API Testing:</span> REST API Validation (Postman)
-            </div>
-            <div class="skill-row">
-                <span class="skill-label">Databases:</span> MySQL (SQL Queries, Backend Validation)
-            </div>
-            <div class="skill-row">
-                <span class="skill-label">Tools &amp; Platforms:</span> Jira, GitHub, Eclipse, TestRail, Chrome DevTools (HTML, CSS)
-            </div>
-            <div class="skill-row">
-                <span class="skill-label">CI/CD &amp; Cloud Tools:</span> Jenkins, GitHub Actions, Microsoft Azure (AZ-104)
-            </div>
-            <div class="skill-row">
-                <span class="skill-label">Processes &amp; Methodologies:</span> Agile/Scrum, STLC, SDLC, Bug Lifecycle Management
-            </div>
+    <div class="section-block">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item"><span class="skill-label">Automation Testing:</span> Java, Selenium WebDriver, TestNG, Maven, POM</div>
+            <div class="skill-item"><span class="skill-label">Manual Testing:</span> Functional, Regression, Smoke, Sanity, SIT, UAT, BVA, ECP</div>
+            <div class="skill-item"><span class="skill-label">API Testing:</span> REST API Validation (Postman)</div>
+            <div class="skill-item"><span class="skill-label">Databases:</span> MySQL (SQL Queries, Backend Validation)</div>
+            <div class="skill-item"><span class="skill-label">Tools &amp; Platforms:</span> Jira, GitHub, Eclipse, TestRail, Chrome DevTools</div>
+            <div class="skill-item"><span class="skill-label">CI/CD &amp; Cloud Tools:</span> Jenkins, GitHub Actions, Microsoft Azure (AZ-104)</div>
+            <div class="skill-item" style="grid-column: span 2;"><span class="skill-label">Processes &amp; Methodologies:</span> Agile/Scrum, STLC, SDLC, Bug Lifecycle Management</div>
         </div>
-    </section>
+    </div>
 
-    <!-- CERTIFICATIONS -->
-    <section class="section certifications">
-        <h2 class="section-title">Certifications</h2>
-
-        <div class="cert-list">
-            <div class="cert">Microsoft Certified: Azure Administrator Associate (AZ-104)</div>
-            <div class="cert">Microsoft Certified: Azure Fundamentals (AZ-900)</div>
+    <div class="section-block">
+        <h2>Certifications</h2>
+        <div class="cert-container">
+            <div class="cert-box">Microsoft Certified: Azure Administrator Associate (AZ-104)</div>
+            <div class="cert-box">Microsoft Certified: Azure Fundamentals (AZ-900)</div>
         </div>
-    </section>
-
+    </div>
 </div>
-
 </body>
 </html>
